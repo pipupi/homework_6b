@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Flexbox 0 — starting code</title>
+    <link rel="stylesheet" type="text/css" href="css/navigation.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/deliver-range-notification.css" />
+    <link rel="stylesheet" type="text/css" href="css/navigation-bar.css" /> -->
+    <style>
+
+        @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+    </style>
+    <script src="js/index.js"></script>
+</head>
+
+<body onload="test()">
+   
+    <div class="layout">
+        <div class="bun-bun font-class-1 border-class-1">BUN<br />BUN</div>
+        <!--navigation logo click go back to main page-->
+        <a href="javascript:history.back()"> 
+            <img class="iconspace-sort-3" src="img/iconspace-sort-3@2x.png" alt="navigation-icon"/>    
+        </a>
+        <!--redirect to store, ...etc page-->
+        <a href="store.html">
+            <div class="group-store">
+                <div class="TXT font-class-1 border-class-1">STORE</div>
+                <img class="LOGO" src="img/store-1@2x.png" alt="store-icon"/>
+            </div>
+        </a>
+        <a href="cart.html" class="notification">
+            <div class="group-cart">
+
+                <div class="TXT font-class-1 border-class-1">CART</div>
+                <div class="container">
+                    <img class="LOGO" src="img/cart-1@2x.png" alt="cart-icon"/>
+                    <span class="badge" id = "cartnum">0</span>
+                </div>
+            </div>
+           
+        </a>
+        <a href="signup.html">
+            <div class="group-signup">
+                <div class="TXT font-class-1 border-class-1">Signup</div>
+                <img class="LOGO" src="img/signup-profile-1-1@2x.png" alt="signup-icon"/>
+            </div>
+        </a>
+        <a href="event.html">
+            <div class="group-event">
+                <div class="TXT font-class-1 border-class-1">Events</div>
+                <img class="LOGO" src="img/iconspace-calendar-1@2x.png" alt="event-icon"/>
+            </div>
+        </a>
+        <a href="index.html">
+            <div class="group-discover">
+                <div class="TXT font-class-1 border-class-1">Discover</div>
+                <img class="LOGO" src="img/discover-1@2x.png" alt="discover-icon"/>
+            </div>
+        </a>
+    </div>
+
+
+</body>
+
+</html>

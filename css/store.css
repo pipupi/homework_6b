@@ -1,0 +1,379 @@
+/* screen - store */
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--n-red);
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h3 {
+  font-size:12px;
+  word-break: break-all;
+  color:black;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.dot {
+  top: -10px;
+  right: -10px;
+  padding: 5px 10px;
+  background: red;
+  border-radius: 20px;
+  display: inline-block;
+  top: var(--edge4);
+  right:var(--edge4);
+  position: fixed;
+  color: white;
+ 
+}
+.layout {
+  border:0px solid transparent;
+  border-radius: 0px;
+  background-color:var(--white);
+  /*turn into grid layout*/
+  display: grid;
+  grid-auto-rows: 200px;
+  grid-template-areas:
+      "h h"
+      "a a"
+      "b b"
+      "c c";
+}
+
+
+
+.border-class-1 {
+  border:0px solid transparent;
+}
+.font-class-1 {
+  font-family:'Roboto', Helvetica, Arial, serif;
+  font-style:normal;
+  font-weight:400;
+}
+.header {
+    position: relative;
+    text-align: left;
+    color: white;
+    grid-area: h;
+    width: 100%; /*make the img responsible with the actual screen width*/
+}
+.iconspace-sort-3 {
+    background-color: transparent;
+    top: var(--edge);
+    right:var(--edge);
+    position: fixed;
+    
+    width: var(--iconp);
+}
+.bun-bun {
+    top: var(--edge);
+    background-color: transparent;
+    color: var(--cornflower-blue);
+    font-size: 55.0px;
+    height: 100%;
+    position: fixed;
+    text-align: left;
+    width: var(--iconp);
+    left: var(--edge);
+}
+.x2017-08-30-rolls-12-1 {
+    background-color: transparent;
+    width: 100%; /*make the img responsible with the actual screen width*/
+    left: 1px;
+    top: 1px;
+}
+
+
+.deliver {
+    background: transparent;
+   
+    text-align: center;
+    grid-area: a;
+    width: 100%; /*make the img responsible with the actual screen width*/
+    height: 40%;
+}
+
+
+
+.google-map {
+    padding: var(--p3) 0;
+    background-color: transparent;
+    color: var(--white);
+    font-size: 1.6vw;
+    right: var(--txta1);
+    position: absolute;
+    text-align: left;
+}
+
+.rectangle-d {
+    grid-area: a;
+    background: var(--n-blue);  
+    height: var(--h2);
+    width:100%;
+
+}
+.rectangle-d:hover {
+    background: var(--cornflower-blue); 
+
+}
+.rectangle-d:active {
+    background: var(--l-blue); 
+
+}
+
+.online {
+    background: transparent;
+    text-align: center;
+    grid-area: b;
+    width: 100%; /*make the img responsible with the actual screen width*/
+    height: 40%;
+}
+
+
+.rectangle-o {
+    position:relative;
+    background: var(--n-red);
+    grid-area: b;
+    height: var(--h1);
+    width: 100%;
+}
+.rectangle-p:hover {
+    background: var(--red); 
+
+}
+.rectangle-p:active {
+    background: var(--l-red); 
+
+}
+
+.intro {
+   
+    background: transparent;
+    text-align: center;
+    grid-area: c;
+    width: 100%; /*make the img responsible with the actual screen width*/
+    height: 40%;
+    overflow: hidden;
+}
+
+
+.rectangle-i {
+    background: var(--cream-brulee);
+    grid-area: c;
+    height: var(--h2);
+    width: 100%;
+}
+.rectangle-i:hover {
+    background: var(--n-brulee); 
+
+}
+.rectangle-i:active {
+    background: var(--l-brulee); 
+
+}
+
+.cart{
+    top:1vw;
+    right:1vw;
+    position: absolute;
+    width: 3vw;
+
+}    
+
+
+.T1 {
+    width: auto;
+    padding: var(--p1) 0;
+    background-color: transparent;
+    color: var(--white);
+    font-size: 3vw;
+    left: var(--txta1);
+    position: absolute;
+    text-align: center;
+}
+
+
+.T2 {
+    padding: var(--p2) 0;
+    background-color: transparent;
+    color: var(--white);
+    font-size: 1vw;
+    left: var(--txta1);
+    position: absolute;
+    text-align: left;
+    vertical-align: central;
+}
+
+
+
+
+
+
+.T4 {
+    padding: var(--p1) 0;
+    background-color: transparent;
+    color: var(--white);
+    font-size: 1vw;
+    left: var(--txta2);
+    position: absolute;
+    overflow: hidden;
+    
+}
+
+
+.square{
+    height: 20vw;
+    width: 20vw; 
+    background-color: var(--white);
+            
+}
+.square:hover{
+    background-color: var(--l-red);
+            
+}
+.square:active{
+    height: 20vw;
+    width: 20vw; 
+    background-color: var(--red);
+            
+}
+
+.sqr1{
+    align-self: center;
+    left:2.5%;
+    
+    position: absolute
+
+}
+
+.sqr2{
+   
+    left:27.5%;
+
+    position: absolute
+
+}
+
+.sqr3{
+    
+    left:52.5%;
+   
+    position: absolute
+    
+}
+
+.sqr4{
+    
+    left:77.5%;
+    
+    position: absolute
+}
+.row1{
+    padding: 20% 0;
+}
+.row2{
+    padding: 5% 0;
+}
+.row3{
+    padding: 20% 0;
+}
+.row4{
+    padding: 5% 0;
+}
+
+
+
+
+
+:root {
+    --black: rgba(0,0,0,1.0);
+    --cornflower-blue: rgba(91,149,234,1.0);
+    --cream-brulee: rgba(255,222,160,1.0);
+    --malibu: rgba(106,189,255,1.0);
+    --mist-gray: rgba(196,196,196,1.0);
+    --white: rgba(255,255,255,1.0);
+    --red: rgba(255,130,130,1.0);
+    --iconp: 40px;
+    --edge: 5%;
+    --edge4: 4%;
+    --h: 200px;
+    --h1:200px;
+    --h2:100px;
+    --p1: 50px;
+    --p2: 100px;
+    --p3: 350px;
+    --w1: 90%;
+    --l-blue: rgba(214,237,255,1.0);
+    --n-blue: rgba(151,209,255,1.0);
+    --l-red: rgba(255,215,215,1.0);
+    --n-red: rgba(255,162,162,1.0);
+    --l-brulee: rgba(255,238,205,1.0);
+    --n-brulee: rgba(255,210,125,1.0);
+    --l-purple: rgba(233,205,255,1.0);
+    --n-purple: rgba(212,159,255,1.0);
+    --txta1: 18%;
+    --txta2: 44%
+}

@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Flexbox 0 — starting code</title>
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/deliver-range-notification.css" /> 
+    <link rel="stylesheet" type="text/css" href="css/navigation-bar.css" /> -->
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+
+    </style>
+    <script src="js/index.js"></script>
+</head>
+<body onload = "retrieve()">
+    <div class="header">
+
+      
+       
+            
+            <div class="online">
+                
+                <div class="rectangle-o">
+                
+                    <div class="T1 font-class-1 border-class-1">PRODUCT DETAIL</div>
+
+                    
+                    
+                    <div class="T2 font-class-1 border-class-1">You can see the details and add to chart in different amount</div> 
+                    
+                    <div class="bun-bun font-class-1 border-class-1">BUN<br />BUN</div>
+        
+                    <a href="navigation.html">
+                        <div class="container">
+                            <img class="iconspace-sort-3" src="img/iconspace-sort-3@2x.png" alt="navigation-icon"/>
+                            <span class="dot" id = "cartnum"> undefined</span>
+                        </div>
+                    </a>
+                    <!--<div class="row1">
+                        
+                        <div class="sqr1 square">              
+                            <img class="cart" src="img/add-cart-2@2x.png" alt="cart-icon"/>                    
+                        </div>
+                        <div class="sqr3 square-t">   
+                            <div class="Title pad1 font-class-1 border-class-1">
+                                Title:
+                            </div> 
+                            <div class="Title pad2 font-class-1 border-class-1">
+                                Price:
+                            </div> 
+                            <div class="Title pad3 font-class-1 border-class-1">
+                                Count:
+                            </div> 
+                            <div class="Title pad4 font-class-1 border-class-1">
+                                Ingredient:
+                            </div>
+                            <div class="btn1 button pdb font-class-1 border-class-1">
+                                checkout item 
+                            </div> 
+                            <div class="btn2 button pdb font-class-1 border-class-1">
+                                checkout cart 
+                            </div>
+
+                        </div>
+                       
+                        
+                    </div>
+                    -->
+                    
+                    
+                </div>
+                <div class="content-center">
+                    <img src="bear.jpg" alt="Bear" style="width:50%" id = "img" class="detailimg"> <br>   
+                    
+                                   
+                        <!--<label for="name">Name :</label>
+                        <h3 id = "name">name</h3>
+                    </form>
+                    <form> 
+                        <label for="count">Count :</label>
+                        <input type="number" id="count" class="inputnum" min="1" max="5" size=1 height="1"> 
+                    </form>
+                    <form> 
+                        <label for="price" class="inputnum">Price :</label>
+                        <h3 id = "price">price</h3>
+                    </form>
+                    <form> 
+                        <label for="txt">Description :</label>
+                        <h3 id = "txt">txt</h3> 
+                    </form>
+                    <form> 
+                        <button onclick="add_to_cart()">add to cart</button> 
+                        <a href="javascript:history.back()"> 
+                             <button>back to store</button> 
+                        </a> 
+                    </form> -->
+                     
+                </div>
+                <div class="content-left">
+                    <form>  
+                        <label>Name :</label>
+                        <h3 id = "name">name</h3>
+                    </form>
+                    <form> 
+                        <label>Count :</label>
+                        <input type="number" name="last" class="inputnum" value ="1" min="1" max="100" id="count"><br />
+                    </form>
+                    <form> 
+                        <label>Price :</label>
+                        <h3 id = "price">price</h3>
+                    </form>
+                    <form> 
+                        <label>Note :</label>
+                        <h3 id = "txt">txt</h3> 
+                    
+                        
+                    </form>
+                </div>
+                <div class="content-center">
+                    
+                    <button onclick="add_to_cart_detail()">add to cart</button> 
+                    <a href="javascript:history.back()"> 
+                        <button>back to store</button> 
+                    </a> 
+                     
+                     
+                </div>
+            </div>
+        
+        <div class="intro">
+
+            <div class="T4 font-class-1 border-class-1">
+                Phone | INSTAGRAM | FACEBOOK <br />
+            </div>   
+            <div class="rectangle-i"></div> <!-- the sequence matter, as it acts like layers in ps, rectangle goes under-->
+        </div>
+        
+    </div>
+  
+    </body>
+</html>
